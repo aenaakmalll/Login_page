@@ -5,34 +5,30 @@
 }
 
 body{
-    font-family:"Poppins", sans-serif;
-    font-weight: 500pt;
+    font-family:"Poppins",sans-serif;
     background:#ffffff;
 }
 
 .container{
-    width:90%;
+
+    width:92%;
     height:92vh;
+
     margin:25px auto;
 
     display:flex;
 
     background:white;
 
-    border-radius:45px;
+    border-radius:35px;
 
     overflow:hidden;
+
 }
 
 .left{
 
-    width: 404px;
-
-    height: 638px;
-    
-    padding:60px 80px;
-
-    flex:1;
+    flex:0.9;
 
     display:flex;
 
@@ -40,31 +36,50 @@ body{
 
     align-items:center;
 
-    height:92vh;
+    padding:35px 60px;
 
 }
 
 .login-box{
 
-    width:380px;
+    width:404px;
+
+    display:flex;
+
+    flex-direction:column;
+
 }
 
 h1{
 
-    margin-bottom:40px;
+    font-size:36px;
 
-    font-size:40px;
+    font-weight:600;
+
+    color:#222;
+
+    margin-bottom:28px;
+
+}
+
+form{
+
+    display:flex;
+
+    flex-direction:column;
+
 }
 
 label{
 
-    display:block;
-
-    margin-bottom:8px;
-
-    font-weight:600;
-
     font-size:14px;
+
+    font-weight:500;
+
+    color:#444;
+
+    margin-bottom:6px;
+
 }
 
 input[type=text],
@@ -73,13 +88,26 @@ input[type=password]{
 
     width:100%;
 
-    padding:13px;
+    padding:12px;
 
-    margin-bottom:20px;
-
-    border:1px solid lightgray;
+    border:1px solid #d9d9d9;
 
     border-radius:8px;
+
+    margin-bottom:14px;
+
+    font-size:14px;
+
+    font-family:"Poppins",sans-serif;
+
+}
+
+input:focus{
+
+    outline:none;
+
+    border-color:#3d6125;
+
 }
 
 .check{
@@ -90,56 +118,72 @@ input[type=password]{
 
     gap:8px;
 
-    font-size:13px;
+    margin-bottom:18px;
 
-    margin-bottom:25px;
+}
+
+.check input{
+
+    width:17px;
+
+    height:17px;
+
 }
 
 .check p{
 
     font-size:12px;
+
+    color:#666;
+
 }
 
 .check a{
 
-    color:black;
+    color:#3d6125;
+
+    text-decoration:none;
+
+    font-weight:600;
+
 }
 
-button{
+form button{
 
     width:100%;
 
-    padding:14px;
-
-    border:none;
-
-    border-radius:8px;
+    padding:12px;
 
     background:#3d6125;
 
     color:white;
 
-    font-size:16px;
+    border:none;
+
+    border-radius:8px;
 
     cursor:pointer;
+
+    font-size:15px;
+
+    font-family:"Poppins",sans-serif;
+
 }
 
-/* Darker button when cursor is over it */
+form button:hover{
 
-button:hover{
+    background:#2f4b1c;
 
-    background:#304b1d;
 }
 
 .line{
-
-    margin:35px 0;
 
     display:flex;
 
     align-items:center;
 
-    color:gray;
+    margin:20px 0;
+
 }
 
 .line::before,
@@ -151,80 +195,111 @@ button:hover{
 
     height:1px;
 
-    background:#ddd;
+    background:#dddddd;
+
 }
 
 .line span{
 
-    margin:0 12px;
+    margin:0 15px;
 
-    font-size:14px;
+    color:#999;
+
+    font-size:13px;
+
 }
 
 .socials{
 
     display:flex;
 
-    gap:15px;
+    gap:12px;
+
 }
 
 .google,
 .apple{
 
+    flex:1;
+
     background:white;
 
-    color:black;
+    border:1px solid #d9d9d9;
 
-    border:1px solid lightgray;
+    border-radius:8px;
+
+    padding:12px;
 
     display:flex;
 
-    align-items:center;
-
     justify-content:center;
+
+    align-items:center;
 
     gap:8px;
 
-    padding:12px;
-}
+    cursor:pointer;
 
-/* Light grey background on hover */
+    color:#333;
+
+    font-size:13px;
+
+    font-family:"Poppins",sans-serif;
+
+}
 
 .google:hover,
 .apple:hover{
 
     background:#f7f7f7;
+
 }
 
 .socials img{
 
-    width:20px;
+    width:18px;
+
 }
 
 .bottom{
 
     text-align:center;
 
-    margin-top:30px;
+    margin-top:20px;
+
+    font-size:14px;
+
+    color:#666;
+
 }
 
 .bottom a{
 
+    color:#3d6125;
+
+    font-weight:600;
+
     text-decoration:none;
 
-    color:rgb(40, 105, 247);
+}
 
-    font-weight:bold;
+.bottom a:hover{
+
+    text-decoration:underline;
+
 }
 
 .right{
 
-    flex:1;
+    flex:1.2;
 
-    height:100vh;
+    display:flex;
 
-    border-radius:45px;
+    justify-content:center;
 
+    align-items:center;
+
+    background:#ffffff;
 
 }
 
@@ -232,11 +307,8 @@ button:hover{
 
     width:100%;
 
-    height:92vh;
+    height:100%;
 
     object-fit:contain;
 
-    border-top-left-radius:45px;
-        
-    border-top-right-radius:45px;
 }
